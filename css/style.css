@@ -168,16 +168,16 @@ body {
   background-color: #e2e8f0;
   grid-area: main;
   display: grid;
-  grid-template-columns: 9fr 3fr;
+  grid-template-columns: 1fr 350px;
   padding: 30px 60px;
   gap: 20px;
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 400px));
-  column-gap: 40px;
-  row-gap: 20px;
+  /* grid-template-columns: repeat(2, minmax(200px, 400px)); */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
   align-content: start;
 }
 
@@ -196,6 +196,10 @@ body {
   gap: 10px;
 }
 
+.card p {
+  color: #797979;
+}
+
 .card ul {
   list-style: none;
   display: flex;
@@ -209,6 +213,39 @@ body {
   display: grid;
   gap: 25px;
   align-items: start;
+}
+
+.announcements h2 {
+  margin-bottom: 10px;
+}
+
+.announcements-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.announement--card {
+  display: grid;
+  gap: 5px;
+  font-size: 0.85rem;
+  color: #797979;
+}
+
+.announement--card h3 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.announement--card:not(:last-child):after {
+  content: '';
+  height: 1px;
+  margin-top: 10px;
+  background: #ddd;
 }
 
 .trending h2 {
