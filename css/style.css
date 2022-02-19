@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #333;
 }
 
 .main {
@@ -26,6 +27,10 @@ body {
 
 .icon {
   color: #eee;
+}
+
+.icon--card {
+  color: #333;
 }
 
 .sidebar {
@@ -108,7 +113,7 @@ body {
 }
 
 .notifications-list .icon {
-  color: black;
+  color: #333;
 }
 
 .notifications-list li:last-child {
@@ -124,6 +129,10 @@ body {
   align-items: center;
   gap: 15px;
   padding-left: 30px;
+}
+
+.profile--small {
+  padding-left: 0;
 }
 
 .profile-greet {
@@ -166,11 +175,67 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 350px));
-  gap: 50px;
+  grid-template-columns: repeat(2, minmax(200px, 400px));
+  column-gap: 40px;
+  row-gap: 20px;
   align-content: start;
 }
 
 .main-content h2 {
   grid-column: 1 / -1;
+}
+
+.card {
+  padding: 25px 20px;
+  padding-left: 27px;
+  border-left: 7px solid orange;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.secondary-content {
+  display: grid;
+  gap: 25px;
+  align-items: start;
+}
+
+.trending h2 {
+  margin-bottom: 10px;
+}
+
+.trending-wrapper {
+  background-color: #fff;
+  padding: 30px 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-text--trending {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.profile-pic--large {
+  width: 64px;
+  height: 64px;
+}
+
+.profile-pic--small {
+  width: 50px;
+  height: 50px;
 }
